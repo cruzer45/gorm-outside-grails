@@ -15,7 +15,7 @@ class Receipt implements GormEntity<Receipt> {
 
     static constraints = {
         qbReference blank: false
-        date blank: false
+        date  nullable: false
         uuid display: false
         createdDate display: false
         editedDate display: false
@@ -29,7 +29,7 @@ class Receipt implements GormEntity<Receipt> {
         id generator: 'sequence', params: [sequence_name: 'seq_Receipt']
         sort "id"
         order "asc"
-        //stripeChargeInformation sqlType: 'text'
+        //longTextField sqlType: 'text'
         //uuid index
         //reallyLongString type: 'text'
         // uuid  index: 'Name_Idx'

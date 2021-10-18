@@ -36,7 +36,9 @@ dependencies {
     implementation 'org.postgresql:postgresql:42.2.24'
     implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
     implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
-
+    implementation 'com.h2database:h2:1.4.200'
+    implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
+    implementation 'com.github.gwenn:sqlite-dialect:0.1.2'
 
 }
 
